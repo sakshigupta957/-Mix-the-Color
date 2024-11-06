@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mix the Color</title>
+        <link rel="stylesheet" href="./game.css">
+        <link rel="icon" href="https://apps4everyone.tech/img/Apps4logo.ico" sizes="any">
+        <link rel="icon" href="https://apps4everyone.tech/img/Apps4Logo.svg" type="image/svg+xml">
+    </head>
+    <body>
+        <img id="socialImage" src="http://js.level2learn.com/colormix/images/ColorMix.png">
+        <div id="gameContainer">
+            <canvas id="gameCanvas" width=350 height=650>
+                <h1>Please update your browser to play this game.</h1>
+            </canvas>
+            <div id="gameOverlay">
+
+                <div id="mixColorRules">
+                    <h1>Can You Color Mix RGB and CMY? </h1>
+                    <br>
+                    <p><span style="color:red">Red</span> + <span style="color:#00ff00">Green</span> = <span style="color:yellow;">Yellow</span> </p>
+                    <p><span style="color:#00ff00">Green</span> + <span style="color:#0000ff">Blue</span> = <span style="color:#00ffff">Cyan</span></p>
+                    <p><span style="color:#0000ff">Blue</span> +<span style="color:red"> Red</span> = <span style="color:#ff00ff">Magenta</span></p>
+                    <p><span style="color:#00ffff">Cyan</span> + <span style="color:#ff00ff">Magenta</span> = <span style="color:#0000ff">Blue</span></p>
+                    <p><span style="color:#ff00ff">Magenta</span> + <span style="color:yellow;">Yellow</span> = <span style="color:red">Red</span></p>
+                    <p><span style="color:yellow;">Yellow</span> + <span style="color:#00ffff">Cyan</span> = <span style="color:#00ff00">Green</span></p>
+                    <br>
+                    <p style="font-family: sans-serif;">Reach 200 pts before <br> 
+                        getting 3 strikes. <br><br> 
+                        Each color match is <br>
+                        worth 10 points.<br> 
+                    </p>
+                    <button id="startButton">Start Color Mixing</button>
+                </div> 
+                <div id="endScreen">
+                    <h1 id="endMessage">Game Over</h1>
+                    <button id="tryAgain">Play Again?</button>
+                </div>       
+            </div>
+        </div>
+       <script type="module" src="./gameCode.js" async defer></script>
+    </body>
+</html>
